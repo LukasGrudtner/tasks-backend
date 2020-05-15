@@ -7,7 +7,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.2.4.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent dev2 from repository teste -->
 	</parent>
 	<groupId>br.ce.wcaquino</groupId>
 	<artifactId>tasks-backend</artifactId>
