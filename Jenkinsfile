@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage ('Início') {
             steps {
-                echo "Git branch: $GIT_BRANCH"
+                LOCAL_GIT_BRANCH = ${GIT_BRANCH#*/}
+                echo "Git branch: ${LOCAL_GIT_BRANCH}"
             }
         }
     }
