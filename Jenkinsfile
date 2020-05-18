@@ -17,7 +17,7 @@ pipeline {
             }
             steps {
                 withSonarQubeEnv('SONAR_LOCAL') {
-                    sh "${scannerHome}/bin/sonar-scanner -e -Dsonar.branch.name=$GIT_LOCAL_BRANCH -Dsonar.projectKey=BranchAnalysis -Dsonar.host.url=http://192.168.0.122:9000 -Dsonar.login=730477b93864ade3fe2be7d96379d8838e23cca5 -Dsonar.java.binaries=target -Dsonar.coverage.exclusions=**/.mvn/**,**/src/test/**,**/model/**,**Application.java"
+                    sh "${scannerHome}/bin/sonar-scanner -e -Dsonar.branch.name=$GIT_LOCAL_BRANCH -Dsonar.projectKey=BranchAnalysis -Dsonar.host.url=http://192.168.0.122:9000 -Dsonar.login=5649ccd0bd07a98ac23eb99c5a4df82eb9bcce33 -Dsonar.java.binaries=target -Dsonar.coverage.exclusions=**/.mvn/**,**/src/test/**,**/model/**,**Application.java"
                 }
             }
         }
