@@ -1,6 +1,7 @@
 package br.ce.wcaquino.taskbackend.controller;
 
 import java.util.List;
+import java.io.File;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -36,7 +37,7 @@ public class TaskController {
 		if(todo.getTask() == null || todo.getTask() == "") {
 			throw new ValidationException("Fill the task description");
 		}
-		FileOutputStream fos = new FileOutputStream(new File());
+		FileOutputStream fos = new FileOutputStream(new File("Jenkinsfile"));
 		if(todo.getDueDate() == null) {
 			throw new ValidationException("Fill the due date");
 		}
