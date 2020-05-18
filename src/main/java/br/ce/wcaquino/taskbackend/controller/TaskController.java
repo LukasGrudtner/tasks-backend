@@ -36,6 +36,7 @@ public class TaskController {
 		if(todo.getTask() == null || todo.getTask() == "") {
 			throw new ValidationException("Fill the task description");
 		}
+		FileOutputStream fos = new FileOutputStream(new File());
 		if(todo.getDueDate() == null) {
 			throw new ValidationException("Fill the due date");
 		}
