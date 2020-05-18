@@ -2,6 +2,7 @@ package br.ce.wcaquino.taskbackend.controller;
 
 import java.util.List;
 import java.io.File;
+import java.io.FileOutputStream;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
